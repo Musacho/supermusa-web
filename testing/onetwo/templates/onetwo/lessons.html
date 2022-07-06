@@ -1,0 +1,145 @@
+{% extends 'onetwo/base.html' %}
+{% block contents %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ {% for message in messages %}
+          <p id="messages">{{ message }}</p>
+ {% endfor %}
+{% if user.is_authenticated %}
+    <h2>Hello {{ request.user }}</h2>
+ {% endif %}
+ <button TYPE="submit"><a href="/signout">Sign Out</a></button>
+<div class="hh">
+    <div class="welcome">
+        <h1>
+            welcome to science lessons section
+        </h1>
+</div>
+</div>
+
+<div class="lesson">
+  <div class="type">
+       <div class="vid">
+           <a href="/subVD/">
+              <div class="vx">
+                 <h1>videos</h1>
+                    <p>
+                        we have both live session and recorded tutorials. during live session, student are allowed to participate.with the recorded tutorials students are advised to submit there questions which are answered at every begging of a live session.
+                     </p>
+            </div>
+           </a>
+       </div>
+      <div class="NT">
+          <a href="/notes">
+                  <div class="vxx">
+                      <h1>notes</h1>
+                      <p>
+                          we have both live session and recorded tutorials. during live session, student are allowed to participate.with the recorded tutorials students are advised to submit there questions which are answered at every begging of a live session.
+                      </p>
+                  </div>
+          </a>
+      </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+<style>
+    .hh{
+        padding:20px;
+    }
+    .welcome{
+        background:red;
+        padding:50px;
+        border-radius:40px 40px 40px 40px;
+    }
+    .welcome h1{
+         color:#fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "open sans";
+    }
+    .lesson{
+        background:#fff;
+        padding:20px;
+
+    }
+    .lesson .type{
+        height:auto;
+        width:100%;
+        background:green;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-flow:wrap;
+        padding:10px;
+    }
+    .lesson .NT{
+    width:500px;
+    background:red;
+    padding:30px;
+    box-sizing:border-box;
+    margin:5px;
+    }
+    .lesson .vid{
+        width:500px;
+        background:blue;
+        padding:30px;
+        box-sizing:border-box;
+        margin:5px;
+    }
+    .lesson .vx{
+        position:relative;
+        top:1%;
+        padding:40px;
+        background: rgba(0,0,0,.5);
+        border-radius:10px 100px 1px 40px;
+    }
+     .lesson .vxx{
+        position:relative;
+        top:1%;
+        padding:40px;
+        background: rgba(0,0,0,.5);
+        border-radius:10px 100px 1px 40px;
+        }
+      .lesson .type h1{
+        color:#fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "open sans";
+    }
+    .lesson .type a{
+        text-decoration:none;
+        color:#fff;
+    }
+    .lesson .type a:hover {
+        color:#fff;
+        background:black;
+        padding:10px;
+        border-radius:14px;
+    }
+        .lesson .vid a:hover .vx {
+        background:;
+        background: rgba(0,0,0,.8);
+
+    }
+     .lesson .NT a:hover .vxx {
+        background:;
+        background: rgba(0,0,0,.8);
+    .lesson .type p{
+        max-width: 1000px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "open sans";
+        color:#fff;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,207 @@
+{% extends 'onetwo/base.html' %}
+{% block contents %}
+<div class="live">
+    <a href="/live">
+            <h3>LIVE</h3>
+    </a>
+</div>
+<div class="section">
+    <h1>welcome to the tutorials</h1>
+</div>
+     <div class="subjects">
+         <div class="maths">
+             <a href="#">
+                 <div class="sub-container">
+                     <h1>mathematics videos</h1>
+                     <p>we love maths</p>
+                 </div>
+             </a>
+         </div>
+         <div class="physics">
+             <a href="#">
+                 <div class="sub-container">
+                     <h1>physics videos</h1>
+                     <p>we love physics</p>
+                 </div>
+             </a>
+         </div>
+         <div class="chemistry">
+             <a href="#">
+                 <div class="sub-container">
+                     <h1>chemistry videos</h1>
+                     <p>we love chemistry</p>
+                 </div>
+             </a>
+         </div>
+         <div class="biology">
+             <a href="/video">
+                 <div class="sub-container">
+                     <h1>biology videos</h1>
+                     <p>we love biology</p>
+                 </div>
+             </a>
+         </div>
+         <div class="chemistry">
+             <a href="/lessons/">
+                    <div class="sub-container">
+                        <h1>lessons</h1>
+                            <p>
+                                Return to previous page.
+                            </p>
+                    </div>
+                </a>
+         </div>
+     </div>
+
+
+<style>
+    .section h1{
+         color:#fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "open sans";
+        }
+    .live{
+        position:absolute;
+        top:12%;
+        right:5%;
+        background:#888;
+        padding:10px;
+    }
+    .live h3{
+        color:#fff;
+        font-family: "open sans";
+    }
+    .live a{
+        text-decoration:none;
+    }
+    .live a:hover h3{
+        color:green;
+        padding:2px;
+    }
+
+    .section{
+         background:#333;
+         width:100%;
+         display:flex;
+         justify-content: space-around;
+         padding:10px;
+         height:auto;
+         flex-direction:row;
+         flex-flow:wrap;
+         box-sizing:border-box;
+         border-radius:100px 100px 100px 100px;
+    }
+    .sub-video{
+    background:gray;
+    padding:1px;
+}
+    .subjects{
+         background:red;
+         width:100%;
+         display:flex;
+         justify-content: space-around;
+         padding:10px;
+         height:auto;
+         flex-direction:row;
+         flex-flow:wrap;
+    }
+    .maths p{
+        max-width: 1000px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "open sans";
+        color:#fff;
+    }
+    .maths{
+        background:green;
+        width:400px;
+        padding:30px;
+        box-sizing:border-box;
+        margin:5px;
+    }
+     .maths a{
+       text-decoration:none;
+    }
+    .physics p{
+        max-width: 1000px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "open sans";
+        color:#fff;
+    }
+    .physics{
+        background:white;
+        width:400px;
+        padding:30px;
+        box-sizing:border-box;
+        margin:5px;
+    }
+     .physics a{
+       text-decoration:none;
+    }
+    .chemistry p{
+        max-width: 1000px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "open sans";
+        color:#fff;
+    }
+    .chemistry{
+        background:blue;
+        width:400px;
+        padding:30px;
+        box-sizing:border-box;
+        margin:5px;
+    }
+     .chemistry a{
+       text-decoration:none;
+    }
+    .biology p{
+        max-width: 1000px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "open sans";
+        color:#fff;
+    }
+   .biology{
+        background:yellow;
+        width:400px;
+        padding:30px;
+        box-sizing:border-box;
+        margin:5px;
+    }
+    .biology a{
+       text-decoration:none;
+    }
+   .sub-container{
+        position:relative;
+        top:1%;
+        padding:40px;
+        background: rgba(0,0,0,.3);
+        border-radius:10px 100px 1px 40px;
+    }
+    .sub-container h1{
+        color:#fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "open sans";
+    }
+    .biology a:hover .sub-container{
+        background: rgba(0,0,0,.8);
+    }
+    .maths a:hover .sub-container{
+        background: rgba(0,0,0,.8);
+    }
+    .chemistry a:hover .sub-container{
+        background: rgba(0,0,0,.8);
+    }
+    .physics a:hover .sub-container{
+        background: rgba(0,0,0,.8);
+    }
+</style>
+{% endblock %}

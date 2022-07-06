@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <script src="https://kit.fontawesome.com/a26ec39938.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+
+            </a>
+        </span>
+        <p>TESTING ONE-TWO</p>
+        <ul class="musa">
+            <li><a href="/">HOME</a></li>
+            <li><a href="#">SERVICES</a>
+                <ul>
+                    <li><a href="#">books</a></li>
+                    <li><a href="#">Teaching</a></li>
+                    <li><a href="#">Test</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="/video">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <li><a href="/">HOME</a></li>
+        <li><a href="#">SERVICES</a>
+            <ul class="kate">
+                <li><a href="#">books</a></li>
+                <li><a href="#">Teaching</a></li>
+                <li><a href="#">Testt</a></li>
+            </ul>
+        </li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="/video">ABOUT</a></li>
+    </div>
+    <div id="main">
+        <h1>SCIENCE</h1>
+    </div>
+   <div>
+       {% block contents %}
+       {% endblock %}
+   </div>
+<footer class="kwi">
+    <div class="footer-content">
+        <h3>code opacity</h3>
+        <p>
+            werdrwehyrfjf rwejrwyrbdwe wrwtrnwjbtrwjrwr wibnkwejw wewurvwrw rw.wurwrvtwerw wtww e wyewte7vd37vq rdhbevwtqe eqfeghevq6j.eqjvevajvwe wejebdwwyev.wh erwxwyjewxwybwxvecwe xwefhxvewytxb qubw .
+        </p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+    <div class="footerbottom">
+        <p>copyright &copy;2022 codeOpacity. designed by <span>musa</span></p>
+    </div>
+</footer>
+<script>
+    function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+     function closeSlideMenu(){
+           document.getElementById('side-menu').style.width = '0';
+           document.getElementById('main').style.marginLeft = '0';
+        }
+</script>
+</body>
+</html>
+<style>
+    footer{
+
+        background: #111;
+        height: auto;
+        width: 100vw;
+        font-family: "open sans";
+        padding-top: 40px;
+        color:#fff;
+    }
+    .footer-container{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-container h3{
+        font-size:1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    .footer-container p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .socials{
+        list-style: none;
+        display: flex;
+        align-item: center;
+        justify-content:center;
+        margin: 1rem 0 3rem 0;
+    }
+    .socials li{
+        margin: 0 10px;
+    }
+    .socials a{
+        text-decoration: none;
+        color:#fff;
+    }
+    .socials a i{
+        font-size:1.1rem;
+        transition: color 0.4s ease;
+    }
+    .socials a:hover i{
+        color: aqua;
+    }
+   .footer-bottom{
+       background: #000;
+       width: 100vw;
+       padding: 20px 0;
+       text-align: center;
+
+   }
+   .footer-bottom p{
+       font-size: 14px;
+       word-spacing: 2px;
+       text-transform: capitalize;
+   }
+   .footer-bottom span{
+       text-transform: uppercase;
+       opacity: 0.4;
+       font-weight: 200;
+   }
+
+</style>

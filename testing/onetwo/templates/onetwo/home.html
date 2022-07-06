@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+{% extends 'onetwo/base.html' %}
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+{% block contents %}
+{% for message in messages %}
+       <p id="messages">{{ message }}</p>
+{% endfor %}
+    <div class="container">
+      <div class="slider">
+        <div class="slide slide1">
+          <div class="caption">
+            <h2>slide1</h2>
+            <p>jbjgyhj qwufifwuif igfuffqwuihifgqgfqwgfhj f gqwg qwuigqw fqhjbfqw. whaty can i do to make this thing work?
+                jkkvvsvnsvlsnvl
+                vvnsdlvnsdlvnsdvnusvmcx,sdis, ,s
+                nxdvnldnsvs, vssdl;vmslvd;v
+                v slvlsvsmvfb fyuf
+                hfajfbjhbfasjfbasjbfaksbfasjkfbfbasjfbfifjfbsdjkbfsd fsdfsdfuhfih.
+            </p>
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div class="caption">
+            <h2>slide2</h2>
+            <p>jbjgyhj qwufifwuif igfuffqwuihifgqgfqwgfhj f gqwg qwuigqw fqhjbfqw. whaty can i do to make this thing work?
+                jkkvvsvnsvlsnvl
+                vvnsdlvnsdlvnsdvnusvmcx,sdis, ,s
+                nxdvnldnsvs, vssdl;vmslvd;v
+                v slvlsvsmvfb fyuf
+                hfajfbjhbfasjfbasjbfaksbfasjkfbfbasjfbfifjfbsdjkbfsd fsdfsdfuhfih.
+            </p>
+          </div>
+        </div>
+         <div class="slide slide3">
+          <div class="caption">
+            <h2>slide3</h2>
+            <p>jbjgyhj qwufifwuif igfuffqwuihifgqgfqwgfhj f gqwg qwuigqw fqhjbfqw. whaty can i do to make this thing work?
+                jkkvvsvnsvlsnvl
+                vvnsdlvnsdlvnsdvnusvmcx,sdis, ,s
+                nxdvnldnsvs, vssdl;vmslvd;v
+                v slvlsvsmvfb fyuf
+                hfajfbjhbfasjfbasjbfaksbfasjkfbfbasjfbfifjfbsdjkbfsd fsdfsdfuhfih.
+            </p>
+          </div>
+        </div>
+         <div class="slide slide4">
+          <div class="caption">
+            <h2>slide4</h2>
+              <img src="{% static 'images/science.jpg' %}">
+            <p>jbjgyhj qwufifwuif igfuffqwuihifgqgfqwgfhj f gqwg qwuigqw fqhjbfqw. whaty can i do to make this thing work?
+                jkkvvsvnsvlsnvl
+                vvnsdlvnsdlvnsdvnusvmcx,sdis, ,s
+                nxdvnldnsvs, vssdl;vmslvd;v
+                v slvlsvsmvfb fyuf
+                hfajfbjhbfasjfbasjbfaksbfasjkfbfbasjfbfifjfbsdjkbfsd fsdfsdfuhfih.
+            </p>
+          </div>
+        </div>
+         <div class="slide slide1">
+          <div class="caption">
+            <h2>slide1</h2>
+            <p>jbjgyhj qwufifwuif igfuffqwuihifgqgfqwgfhj f gqwg qwuigqw fqhjbfqw. whaty can i do to make this thing work?
+                jkkvvsvnsvlsnvl
+                vvnsdlvnsdlvnsdvnusvmcx,sdis, ,s
+                nxdvnldnsvs, vssdl;vmslvd;v
+                v slvlsvsmvfb fyuf
+                hfajfbjhbfasjfbasjbfaksbfasjkfbfbasjfbfifjfbsdjkbfsd fsdfsdfuhfih.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<h5>we are here to help you understand science easy an fast</h5>
+   <div class="form">
+        <div class="description">
+            <div class="ofof">
+                 <a href="#">
+                     <div class="of">
+                         <h1>we love science</h1>
+                             <p>
+                                 rjubvtryjndvrkdrjg crhbvmbutdrnkt ruexctkecthjtr ertekjwex creryhkewrcbywec ereywrhwecyer  rykrce werekrc yecweyuicrbrwr  wrewrtuk .
+                             </p>
+                     </div>
+                 </a>
+
+            </div>
+            <div class="ofof">
+                <a href="lessons/">
+                    <div class="off">
+                        <h1>lessons</h1>
+                            <p>
+                                We offer online lessons at affordable price.Our online lessons come with videos and notes. Students are free to ask questions where not clear during live lessons. In case of a video tutorial, all students submit their questions to be answered at a particular time.Our lessons involve Mathematics, Physics, Chemistry and Biology.
+                            </p>
+                    </div>
+                </a>
+
+            </div>
+            <div class="ofof">
+               <a href="#">
+                    <div class="of">
+                        <h1>we love you</h1>
+                            <p>
+                                 We offer online lessons at affordable price.Our online lessons come with videos and notes. Students are free to ask questions where not clear during live lessons. In case of a video tutorial, all students submit their questions to be answered at a particular time.Our lessons involve Mathematics, Physics, Chemistry and Biology.
+                            </p>
+                    </div>
+               </a>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .form{
+        background:red;
+    }
+    .form .description{
+        height:auto;
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-flow:wrap;
+        padding:0px;
+    }
+
+    .ofof a{
+        text-decoration:none;
+    }
+    .ofof a:hover .of{
+        background: rgba(0,0,0,.7);
+    }
+      .ofof a:hover .off{
+        background: rgba(0,0,0,.7);
+    }
+    .form .description .ofof{
+        width:500px;
+        margin:5px;
+        background:url(static/images/che3.jpg);
+        padding:30px;
+        box-sizing:border-box;
+        font-size:15px;
+        height:auto;
+        text-align: center;
+    }
+
+    .form .description .of h1{
+        color:#fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "open sans";
+    }
+    .form .description .off h1{
+        color:#fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "open sans";
+    }
+    .form .description .of p{
+        color:#fff;
+        max-width: 1000px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "open sans";
+    }
+     .form .description .off p{
+        color:#fff;
+        max-width: 1000px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        font-family: "open sans";
+        }
+    .form .description .of{
+        padding:30px;
+        background: rgba(0,0,0,.4);
+        border-radius:40px 40px 40px 40px;
+        text-align: center;
+    }
+     .form .description .off{
+        position:relative;
+        top:0%;
+        padding:30px;
+        background: rgba(0,0,0,.4);
+        border-radius:40px 40px 40px 40px;
+        text-align: center;
+    }
+    .container{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 50vh;
+        background:red;
+    }
+    .container .slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500%;
+        height: 100%;
+        float: left;
+        animation: animate 24s linear infinite;
+
+    }
+    .container .slider .slide{
+        position: relative;
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+    .container .slider .slide .caption{
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+        right: 60px;
+        padding: 30px;
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    .container .slider .slide .caption h2{
+        margin: 0 0 20px;
+        padding: 0;
+        color: #fff;
+        font-size: 48px;
+         transition: 0.5s;
+    }
+    .container .slider .slide .caption p{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    .container .slider .slide.slide1{
+        background: url(static/images/dog.jpg);
+        background-size: 500px;
+        background-position: center;
+        border-radius:80px 80px 80px 80px;
+    }
+    .container .slider .slide.slide2{
+        background: url(static/images/che1.jpg);
+        background-size: 1000px;
+        background-position: center;
+    }
+    .container .slider .slide.slide3{
+        background: url(static/images/bio.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container .slider .slide.slide4{
+        background: url(static/images/phy2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    @keyframes animate{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+    @media(max-width: 768px){
+       .container .slider .slide .caption{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+        padding: 30px;
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+    }
+    .container .slider .slide .caption h2{
+        margin: 0 0 20px;
+        font-size: 30px;
+    }
+    .container .slider .slide .caption p{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 15px;
+    }
+    }
+
+</style>
+{% endblock %}

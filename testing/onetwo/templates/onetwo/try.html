@@ -1,0 +1,32 @@
+{% extends 'onetwo/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image</title>
+    <script src="https://kit.fontawesome.com/a26ec39938.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+{% block contents %}
+<h1>welcome to the science book</h1>
+        <div class="book">
+            <embed src="{% static 'files/BASICS.pdf'%}#toolbar=2 " type="application/pdf" />
+            <h1>hwello</h1>
+        </div>
+   <h1 >hwew</h1>
+   <img src="{% static 'images/science.jpg' %}">
+   <i class="fa-brands fa-facebook">
+</body>
+</html>
+<style>
+    .book embed{
+         padding:1px;
+         background:green;
+         padding:;
+         height:100vh;
+         width:100vw;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'onetwo/base.html' %}
+{% block contents %}
+     <div class="start">
+         <h1>hello</h1>
+        {% for vid in vid %}
+        <video class="vn" width="420" height="280" controls="controls">
+               <source src="{{ vid.videos.url }}" type="video/mp4 ">
+        </video>
+        <div class="title">
+             <p>{{ vid.title }}</p>
+        </div>
+        {% endfor %}
+         <h1> im enjoying this</h1>
+    </div>
+{% endblock %}
+<style>
+
+</style>
